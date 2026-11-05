@@ -1,0 +1,11 @@
+Textures: ambientCG.com (CC0) - OfficeCeiling001, Tiles036, Tiles132A, Tiles040
+HDRI: Poly Haven (CC0) - modern_bathroom by Poly Haven
+- studio_small_03_1k.hdr — Poly Haven (CC0), via pmndrs/drei-assets; self-hosted so no third party sees page views
+
+Sector photos (public/media/img/insitu-*.jpg) — Unsplash License (free for commercial use), sensor added by us:
+- insitu-education.jpg — https://unsplash.com/photos/row-of-sinks-and-stalls-in-a-public-restroom-STAheysRz-Q (jacopo marello)
+- insitu-healthcare.jpg — images.unsplash.com/photo-1777269749032-d8d458ae594d (empty hospital corridor)
+- insitu-hospitality.jpg — images.unsplash.com/photo-1778205015308-1ed324aea202 (modern bedroom, marble wall)
+- insitu-offices.jpg — https://unsplash.com/photos/modern-bathroom-with-multiple-sinks-and-mirrors-hgPtOHE82Ec (Alban)
+- insitu-leisure.jpg — images.unsplash.com/photo-1676012088690-d2197f76db9b (locker room)
+- insitu-public.jpg — images.unsplash.com/photo-1611349107217-51cbc0328957 (black leather chairs, waiting area)

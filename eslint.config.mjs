@@ -7,6 +7,8 @@ const eslintConfig = defineConfig([
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
+    // Live 3D scenes copied from Animation/explode-viewer (kept as-is)
+    "src/scenes/**",
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
