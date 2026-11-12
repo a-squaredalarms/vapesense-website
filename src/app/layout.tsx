@@ -69,9 +69,13 @@ const orgJsonLd = {
   name: SITE.name,
   url: SITE.url,
   logo: `${SITE.url}/vape-logo.png`,
+  legalName: SITE.company,
   email: SITE.email,
   description: SITE.description,
   slogan: SITE.tagline,
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  contactPoint: { '@type': 'ContactPoint', contactType: 'sales', email: SITE.email, url: `${SITE.url}/contact`, areaServed: 'GB', availableLanguage: 'English' },
+  knowsAbout: ['vape detection', 'vape detectors for schools', 'smoke detection', 'vaping in school toilets', 'privacy-safe vape sensors'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
