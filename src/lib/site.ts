@@ -7,8 +7,8 @@ export const SITE = {
   tagline: 'Catches the vape and the smoke. Ignores the hairspray.',
   description:
     'Privacy-safe vape and smoke detection for schools, hospitals, hotels and offices. No cameras, no microphones — VapeSense reads the air, blocks false alarms from steam, sprays and dust, and alerts staff in under 60 seconds.',
-  email: 'info@a-squaredalarms.com',
-  company: 'A-Squared Alarms',
+  email: 'info@vape-sense.com',
+  company: 'A-Squared (A2) Ltd',
   // Google Search Console "HTML tag" code: only the content="..." value. Leave empty if you
   // verify the domain with a DNS record instead.
   googleVerification: '',
@@ -18,7 +18,7 @@ export const SITE = {
 
 // Legal details shown in the privacy policy. Fill these in before going live; empty ones are left out.
 export const LEGAL = {
-  entity: 'A-Squared Alarms', // full registered name, e.g. "A-Squared Alarms Ltd"
+  entity: 'A-Squared (A2) Ltd', // full registered name
   companyNumber: '', // Companies House number
   address: '', // registered office address
   icoNumber: '', // ICO data protection registration number

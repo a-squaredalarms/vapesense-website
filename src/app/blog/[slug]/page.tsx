@@ -87,6 +87,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         }}
       />
 
+      {post.faq && (
+        <JsonLd
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: post.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+          }}
+        />
+      )}
+
       <VisualHero
         crumbs={
           <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -107,6 +117,27 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <div className="prose"><ul>{post.takeaways.map((t) => <li key={t}>{t}</li>)}</ul></div>
           </div>
           <div className="prose">{post.body.map(renderBlock)}</div>
+          {post.faq && (
+            <div className="prose">
+              <h2>Frequently asked questions</h2>
+              {post.faq.map((f) => (
+                <div key={f.q}>
+                  <h3>{f.q}</h3>
+                  <p>{f.a}</p>
+                </div>
+              ))}
+            </div>
+          )}
+          {post.sources && (
+            <div className="prose">
+              <h2>Sources</h2>
+              <ul>
+                {post.sources.map((s) => (
+                  <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
         </article>
       </section>
 

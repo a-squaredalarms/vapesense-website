@@ -1,5 +1,6 @@
 // Blog posts. Each body is a list of simple blocks so posts stay easy to edit without touching page code.
 // Claims are kept to what the VapeSense docs verify — no invented statistics.
+import { HEALTH_POSTS } from './blog-health';
 
 export type Block =
   | { type: 'p'; text: string }
@@ -20,6 +21,9 @@ export type Post = {
   keywords: string[];
   takeaways: string[];
   body: Block[];
+  // Optional extras: an FAQ section (also published as FAQPage structured data) and a source list.
+  faq?: { q: string; a: string }[];
+  sources?: { label: string; url: string }[];
 };
 
 export const POSTS: Post[] = [
@@ -203,6 +207,7 @@ export const POSTS: Post[] = [
       { type: 'cta', text: 'Planning a rollout? We can help you map sensor positions.', href: '/contact', label: 'Talk to us' },
     ],
   },
+  ...HEALTH_POSTS,
 ];
 
 export function getPost(slug: string) {
